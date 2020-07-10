@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DIABETES PREDICTOR</title>
+   <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static' ,filename='style.css')}}">
+
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Sriracha">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="img-box">
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+      <div class="background">
+
+        <h1>Diabetes Prediction App</h1>
+        <div class="info">
+          <form action="{{ url_for('predict') }}" method="POST">
+
+            <input class="form-input" type="text" name="Pregnancies" placeholder="No of pregnancies" size="50"><br>
+            <p></p>
+
+            <input class="form-input" type="text" name="Glucose" placeholder="Glucose level in mg/dl" size="50"><br>
+            <p></p>
+            <input class="form-input" type="text" name="BP" placeholder="BP in mmHg" size="50"><br>
+            <p></p>
+            <input class="form-input" type="text" name="SkinThickness" placeholder="Skin Thickness in mm" size="50"><br>
+            <p></p>
+            <input class="form-input" type="text" name="Insulin" placeholder="Insulin level in IU/mL" size="50"><br>
+            <p></p>
+            <input class="form-input" type="text" name="BMI" placeholder="BMI in kg/m2" size="50"><br>
+            <p></p>
+            <input class="form-input" type="text" name="DPF" placeholder="Diabetes Pedigree Function" size="50"><br>
+            <p></p>
+            <input class="form-input" type="text" name="Age" placeholder="Age" size="50"><br>
+            <p></p>
+            <input type="submit" class="mybutton"  value="Predict">
+
+</div>
+  </div>
+
+
+          <footer>
+            <h6>A Machine Learning Web App Made with Flask</h6>
+            <h6>Made by Venkatesh Akhouri</h6>
+            <p></p>
+            <h6>Contacts:</h6>
+          <a href="https://www.instagram.com/venk_ky/" class="fa fa-instagram" ></a>
+          <a href="https://www.linkedin.com/in/venkatesh-akhouri-188591163/" class="fa fa-linkedin" padding=5em></a>
+          <a href="https://github.com/venkatesh-akhouri" class="fa fa-github"></a>
+
+            </footer>
+
+
+  </body>
+</html>

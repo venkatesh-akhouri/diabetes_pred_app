@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DIABETES PREDICTOR</title>
+      <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="heading">
+        <h1>RESULTS</h1>
+
+      </div>
+
+      <div class="results">
+      {% if prediction==1 %}
+        <h2 class="pred">PREDICTION: <span class="has">YOU HAVE BEEN DIAGONSED WITH DIABETES</span></h2>
+     {% elif prediction==0 %}
+        <h2 class="pred">PREDICTION :<span class="safe">YOU DON'T HAVE DIABETES</span></h2>
+        <h2>YOU CAN HAVE MORE SWEETS</h2>
+
+    {% endif %}
+
+
+
+
+
+<div class="res_foot">
+  <footer>
+    <h6>A Machine Learning Web App Made with Flask</h6>
+    <h6>Made by Venkatesh Akhouri</h6>
+  <a href="https://www.instagram.com/venk_ky/" class="fa fa-instagram"></a>
+  <a href="" class="fa fa-linkedin"></a>
+  <a href="https://www.instagram.com/venk_ky/" class="fa fa-github"></a>
+
+    </footer>
+
+</div>
+
+        </div>
+
+
+
+  </body>
+</html>
